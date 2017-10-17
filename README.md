@@ -15,10 +15,10 @@ SVG-Based Image Placeholder
     Primitive (https://github.com/fogleman/primitive)
     
 ## Installation 
-    npm install @mbalabash/gulp-sqip
+    npm install gulp-sqip
     
 ## Usage
-    const gsqip = require('@mbalabash/gulp-sqip');
+    const gsqip = require('gulp-sqip');
     gulp.task('generate-svg-placeholders', function(){
         gulp.src(['./img/test.png', './img/test.jpeg', './img/test.jpg'])
         .pipe(gsqip({
