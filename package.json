@@ -2,6 +2,10 @@
   "name": "gulp-sqip",
   "version": "0.1.0",
   "description": "Gulp plugin for sqip (see https://github.com/technopagan/sqip)",
+  "repository" :{
+    "type" : "git",
+    "url" : "https://github.com/mbalabash/gulp-sqip"
+  },
   "main": "index.js",
   "keywords": [
     "svg",
@@ -12,8 +16,11 @@
     "gulpplugin",
     "user-experience"
   ],
-  "author": "mbalabash",
-  "license": "ISC",
+  "license": "MIT",
+  "author": {
+    "name" : "Maksim Balabash",
+    "email" : "maksim.balabash@gmail.com"
+  },
   "dependencies": {
     "sqip": "^0.2.1",
     "through2": "^2.0.3"
