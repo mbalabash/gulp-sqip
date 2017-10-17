@@ -20,7 +20,9 @@ SVG-Based Image Placeholder
     const gsqip = require('@mbalabash/gulp-sqip');
     gulp.task('generate-svg-placeholders', function(){
         gulp.src(['./img/test.png', './img/test.jpeg', './img/test.jpg'])
-        .pipe(gsqip())
+        .pipe(gsqip({
+            numberOfPrimitives: 12 //optional parameter (default: 22)
+        }))
         .pipe(gulp.dest('./img'));
     });
   
