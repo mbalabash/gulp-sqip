@@ -6,7 +6,7 @@ const gutil = require('gulp-util');
 const sqip = require('sqip');
 const PLUGIN_NAME = 'gulp-sqip';
 
-module.exports = () => {
+module.exports = (options) => {
     /**
      * @this {Transform}
      */
@@ -19,7 +19,7 @@ module.exports = () => {
         if (file.isBuffer()) {
             const svg = sqip({
                 filename: file.history[0],
-                numberOfPrimitives: 22
+                numberOfPrimitives: (options !== undefined && typeof options.numberOfPrimitives === 'number') ? options.numberOfPrimitives : 22
             });
             svg.path = getFilenameFromPath(file.history[0]) + '.svg';
             placeholders.push(svg);
