@@ -7,6 +7,7 @@ This plugin used **sqip** (see https://github.com/technopagan/sqip)
 
 ## Overview
 SVG-Based Image Placeholder
+
 ![Demo results](demo/demo.png)
 
 ## Requirements
